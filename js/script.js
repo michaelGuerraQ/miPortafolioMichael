@@ -99,3 +99,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+// Este script permite cambiar las imágenes dentro del contenedor slider al hacer clic en las imágenes.
+document.querySelectorAll('.image-slider img').forEach((img, index) => {
+    img.addEventListener('click', () => {
+        const images = img.parentElement.querySelectorAll('img');
+        images.forEach((image, idx) => {
+            image.style.opacity = idx === index ? '1' : '0';
+        });
+    });
+});
