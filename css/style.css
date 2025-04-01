@@ -638,3 +638,47 @@ nav ul {
         z-index: 1100;
     }
 }
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+.project {
+    background: #fff;
+    border-radius: 10px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.carousel {
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 10px;
+}
+.carousel img {
+    width: 100%;
+    border-radius: 5px;
+    scroll-snap-align: start;
+}
+.btn-probar, .btn-detalles {
+    display: block;
+    margin-top: 10px;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+}
+.btn-probar {
+    background: #28a745;
+    color: white;
+}
+.btn-detalles {
+    background: #007bff;
+    color: white;
+}
